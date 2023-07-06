@@ -42,18 +42,19 @@ Install a TOTP app on your device. This will be a vital tool for securing your a
 
 Many password managers allow for keeping these codes together with your account passwords, though experts disagree on whether it is wise to utilise these features. Personally, I would advise against this as you lose the benefits of using multifactor authentication were your password manager to become compromised.
 
-Some solid recommendations include:
+#### Alternatives
 
-#### Open Source
+##### Open Source
 
 - [2FAS](https://2fas.com) (iOS & Android) - Allows for one-click autofill by use of the *[optional]* tunnel browser extension
 - [Aegis](https://getaegis.app) (Android)
+- [FreeOTP](https://freeotp.github.io/) (iOS & Android)
 
-#### Closed Source
+##### Closed Source
 
-- Authy (iOS & Android)
-- Google Authenticator (iOS & Android)*
-- Microsoft Authenticator (iOS & Android)*
+- [Authy](https://authy.com/) (iOS & Android)
+- Google Authenticator ([iOS](https://apps.apple.com/us/app/google-authenticator/id388497605) & [Android](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=en&gl=US))*
+- [Microsoft Authenticator](https://www.microsoft.com/en-ww/security/mobile-authenticator-app?SilentAuth=1&wa=wsignin1.0) (iOS & Android)*
 
 > \* Personally, I would recommend against using a closed source offering from one of the [Big Five](https://en.wikipedia.org/wiki/Big_Tech) to maintain better control over your own data
 
@@ -63,11 +64,13 @@ Switching e-mail providers can seem like a daunting prospect but, when combined 
 
 When registering for this new account, pick a brand new username that you have never used anywhere before and preferably one that would be hard to guess/associate with you. Avoid including personal information like your name or birth year.
 
-Use a strong password that you will be able to remember and set up 2FA using your TOTP app or, even better, a hardware security key like [Yubikey](https://www.yubico.com). These are important factors both to properly secure your account, but also since your e-mails will now be encrypted against these credentials, so losing them will mean losing access to your e-mails.
+Use a strong password that you will be able to remember and set up 2FA using your TOTP app or, even better, a hardware security key like [Yubikey](https://www.yubico.com). These are important factors to properly secure your account but, since your data will now be encrypted against these credentials, losing them will mean losing access to your e-mails, even if you were regain access to your account.
 
-Avoid using any quick import features/auto-forwarding as not to associate your new e-mail with your old e-mail if at all possible.
+Avoid using any quick import features/auto-forwarding as not to associate your new e-mail with your old e-mail.
 
-Here are some recommendations for e-mail providers:
+#### Alternatives
+
+##### Open Source
 
 - [ProtonMail](https://proton.me/mail)
 - [Tutanota](https://tutanota.com)
@@ -75,52 +78,74 @@ Here are some recommendations for e-mail providers:
 
 #### Account/Data Recovery
 
-If going with **Proton**, make sure to [enable a recovery phrase](https://proton.me/support/set-account-recovery-methods#how-to-enable-a-recovery-phrase) that you can use in the eventuality you must recover your account. Not only will this grant you access to your account, it will also mean that you can access all your e-mails/data. Additionally, you may consider [adding a recovery e-mail address](https://proton.me/support/set-account-recovery-methods#how-to-add-or-change-a-recovery-email-address).
+If going with **Proton**, make sure to [enable a recovery phrase](https://proton.me/support/set-account-recovery-methods#how-to-enable-a-recovery-phrase) that you can use in the eventuality you must recover your account. Not only will this grant you access to your account, it will also mean that you can access all your e-mails/data. Other providers will most likely offer an equivalent option.
+
+Additionally, you may consider [adding a recovery e-mail address](https://proton.me/support/set-account-recovery-methods#how-to-add-or-change-a-recovery-email-address) but, again, don't use your old e-mail address for this. A good option is using the e-mail address of a loved one, ideally one who also uses E2EE e-mail.
 
 ### 3. Register with an e-mail aliasing service
 
-At least with **Proton Mail**, you can create a couple of aliases directly in their e-mail service. I would recommend creating one such alias when registering with a dedicated alias service, unless going with **Proton**/**SimpleLogin**, as to not expose your actual e-mail address/username to anyone but your e-mail provider.
+At least with **Proton Mail**, you can create a couple of aliases directly in their e-mail service. I would recommend creating one of these to use when registering with a dedicated alias service, unless going with **Proton**/**SimpleLogin**, as to not expose your actual e-mail address/username to anyone but your e-mail provider.
 
-If you opt for **SimpleLogin** and are already using **Proton Mail** you can simply log in with your **Proton** account. Otherwise, set a strong password & enable 2FA, but make sure the password is different from the one you used with your e-mail service. You will change this password once you have set up a password manager.
+If you opt for **SimpleLogin** and are already using **Proton Mail** you can simply log in with your **Proton** account. Otherwise, set a strong password & enable 2FA, but make sure the password is different from the one you used with your e-mail provider. You will change this password once you have set up a password manager.
+
+#### Alternatives
+
+##### Open Source
 
 - [SimpleLogin](https://simplelogin.io/)
 - [AnonAddy](https://anonaddy.com/)
 - [Firefox Relay](https://relay.firefox.com/)
+
+##### Closed Source
+
 - [Apple Hide My E-mail](https://support.apple.com/en-us/HT210425)
 
 #### Custom domains
 
-There is a case to be made both for and against using a custom domain with your e-mails. It is certainly somewhat less anonymous, since you are, at some point or another, associated with the domain you register. Many domain registrars do however allow you to anonymise your personal information from showing up in who.is lookups. Your domain may also stand out more than one you may otherwise be assigned by your aliasing service.
+There is a case to be made both for and against using a custom domain with your e-mails. It is certainly somewhat less anonymous, since you are, at some point or another, associated with the domain you register. Many domain registrars do however allow you to anonymise your personal information from showing up in [WHOIS](https://en.wikipedia.org/wiki/WHOIS) lookups. Your domain may also stand out more than one you may otherwise be assigned by your aliasing service.
 
-One advantage of using a custom domain is that it frees you from being forever tied to one specific e-mail aliasing service. Also, when using a lot of e-mail aliases, you can very simply enable notification if *any* of them are detected in a data breach using the Domain Search feature from [have i been pwned?](https://haveibeenpwned.com/DomainSearch).
+A great advantage of using a custom domain is that you are not bound to your e-mail provider nor your e-mail aliasing service. Also, when using a lot of e-mail aliases, you can very simply enable notification if *any* of them are detected in a data breach using the [Domain Search feature from have i been pwned?](https://haveibeenpwned.com/DomainSearch).
 
 #### PGP Encryption
 
-At this point, if your aliasing service allows for it, I would strongly recommend setting up PGP encryption between your e-mail service and your aliasing service to protect against man-in-the-middle attacks between your aliasing service and your e-mail provider.
+At this point, if your aliasing service allows for it, I would strongly recommend setting up PGP encryption between your e-mail provider and your aliasing service to protect against man-in-the-middle attacks between your aliasing service and your e-mail provider.
 
 ### 4. Register for a password manager
 
 This is the first service you can use your e-mail aliasing service to generate an alias for. (e.g. bitwarden.24kys@mydomain.com), again, unless you remain within the **Proton** ecosystem.
 
-For all other cases than **Proton**/**Proton Pass**, set a new, strong password that you will be able to remember and enable 2FA. This password and the password to your e-mail service are the only two passwords you will need to remember in future.
+For all other cases than **Proton**/**Proton Pass**, set a new, strong password that you will be able to remember and enable 2FA. This password and the password to your e-mail provider are the only two passwords you will need to remember in future.
 
 You can try out your new password manager by adding the e-mail/password combination you used when signing up for the e-mail aliasing service. You can then immediately navigate to your e-mail aliasing service and use your password manager to generate a new, much stronger password to use here.
 
 Most password managers support autofilling not only username, passwords & TOTPs, but also personal information like name, address, passport and credit card information. You can add all of these into your password manager to save having to fish out your credit card or passport any time you go to purchase something/register for a flight.
 
-Some solid options for password managers include:
+#### Alternatives
 
-- [Proton Pass](https://proton.me/pass)* (Open source)
-- [Bitwarden](https://bitwarden.com) (Open source)
-- [KeePass](https://keepass.info) (Open source)
-- [1Password](https://1password.com/) (Closed source)
-- [Dashlane](https://www.dashlane.com/) (Closed source)
+##### Open Source
+
+- [Proton Pass](https://proton.me/pass)*
+- [Bitwarden](https://bitwarden.com)
+- [KeePassXC](https://keepassxc.org)
 
 > \* Proton Pass is a very new offering from Proton and, as such, is not as mature as some of the others. It is remarkably feature-complete for something not even a month old, but I would probably recommend sticking with Bitwarden for the time being.
 
+##### Closed Source
+
+- [1Password](https://1password.com)
+- [Dashlane](https://www.dashlane.com)
+
 ### 5. Import all your passwords
 
-It is really important to make sure you have caught as many passwords as it is possible to catch from any and all browsers you use (Chrome, Firefox, Brave, Edge, Opera, ...), across all your devices (desktop PC, laptop, phone, tablet...). Some password managers also have the facility to import accounts from your e-mail.
+It is really important to make sure you have retrieved as many passwords as it is possible to get out of any and all browsers you use (Chrome, Firefox, Brave, Edge, Opera, ...), across all your devices (desktop PC, laptop, phone, tablet...). Some password managers also have the facility to import accounts from your e-mail.
+
+Password import guides for each of the aforementioned providers are listed here:
+
+- [Proton Pass: How to import to Proton Pass](https://proton.me/support/pass-import)
+- [Bitwarden: Import Data to your Vault](https://bitwarden.com/help/import-data)
+- [KeePassXC: Importing External Databases](https://keepassxc.org/docs/KeePassXC_UserGuide#_importing_external_databases)
+- [1Password: Move your data from other applications to 1Password](https://support.1password.com/import)
+- [Dashlane: Import your data into Dashlane](https://support.dashlane.com/hc/en-us/articles/360004101920-Import-your-data-into-Dashlane)
 
 ## Sorting through your accounts
 
@@ -209,7 +234,7 @@ Using an alias like this, especially in combination with something like [have i 
 
 ### 7. Migrate away from "Sign in with..."
 
-As with almost this entire document, this is up to personal choice, but in my view; with unique passwords/e-mail addresses, the benefit of using a third party identity provider is somewhat moot.
+As with almost this entire guide, this is up to personal choice, but in my view; with unique passwords/e-mail addresses, the benefit of using a third party identity provider is somewhat moot.
 
 Whilst you are entrusting credentials to the service you sign into when using a traditional e-mail/password combination, since both your e-mail address and password are now entirely unique to each individual service, there is  were one of these services to be compromised. It also means that, were your Google/Apple/Microsoft account to be compromised, the hacker would not gain access to any services you sign into using this account.
 
@@ -253,13 +278,13 @@ I used Gmail, so much of my data consequently ended up with Google. Photos, Driv
 
 > eg. Gmail, Outlook
 
-See recommendations further up in this document.
+See recommendations further up in this guide.
 
 ### TOTP
 
 > eg. Google Authenticator, Microsoft Authenticator
 
-See recommendations further up in this document.
+See recommendations further up in this guide.
 
 ### Drive
 
