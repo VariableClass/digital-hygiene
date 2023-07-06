@@ -2,25 +2,26 @@
 
 ## Overview
 
-- Getting Started
-  - Install a Time-based One Time Password (TOTP) app
-  - Register for a brand new end-to-end encrypted (E2EE) e-mail account
-  - Register with an e-mail aliasing service
-  - Register for a password manager
-  - Import all your passwords
-- Sorting through your accounts
-  - In future
-  - Merge duplicates
-  - Delete the account if you no longer need it
-  - Change your password
-  - Enable MFA
-  - Improve your privacy settings
-  - Use an e-mail alias
-  - Migrate away from "Sign in with..."
-  - Update payment information
-  - Update address information
-- Protect your phone number
-- De-Google your life
+- [Getting Started](#getting-started)
+  - [Install a Time-based One Time Password (TOTP) app](#1-install-a-time-based-one-time-password-totp-app)
+  - [Register for a brand new end-to-end encrypted (E2EE) e-mail account](#2-register-for-a-brand-new-end-to-end-encrypted-e2ee-e-mail-account)
+  - [Register with an e-mail aliasing service](#3-register-with-an-e-mail-aliasing-service)
+  - [Register for a password manager](#4-register-for-a-password-manager)
+  - [Import all your passwords](#5-import-all-your-passwords)
+- [Sorting through your accounts](#sorting-through-your-accounts)
+  - [In future](#0-in-future)
+  - [Merge duplicates](#1-merge-duplicates)
+  - [Delete the account if you no longer need it](#2-delete-the-account-if-you-no-longer-need-it)
+  - [Change your password](#3-change-your-password)
+  - [Enable MFA](#4-enable-mfa)
+  - [Improve your privacy settings](#5-improve-your-privacy-settings)
+  - [Use an e-mail alias](#6-use-an-e-mail-alias)
+  - [Migrate away from "Sign in with..."](#7-migrate-away-from-sign-in-with)
+  - [Update payment information](#8-update-payment-information)
+  - [Update address information](#9-update-address-information)
+- [Separating work & home](#separating-work--home)
+- [Protect your phone number](#protect-your-phone-number)
+- [De-Google your life](#de-google-your-life)
 
 ## Getting Started
 
