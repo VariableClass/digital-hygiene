@@ -72,7 +72,7 @@ Avoid using any quick import features/auto-forwarding as not to associate your n
 
 ##### Open Source
 
-- [ProtonMail](https://proton.me/mail)
+- [ProtonMail](https://pr.tn/ref/XRYC0YW7X370)
 - [Tutanota](https://tutanota.com)
 - [StartMail](https://www.startmail.com/)
 
@@ -234,9 +234,9 @@ Using an alias like this, especially in combination with something like [have i 
 
 ### 7. Migrate away from "Sign in with..."
 
-As with almost this entire guide, this is up to personal choice, but in my view; with unique passwords/e-mail addresses, the benefit of using a third party identity provider is somewhat moot.
+As with almost this entire guide, this is down to personal choice, but in my view; with unique passwords/e-mail addresses, the benefit of using a third party identity provider is somewhat moot.
 
-Whilst you are entrusting credentials to the service you sign into when using a traditional e-mail/password combination, since both your e-mail address and password are now entirely unique to each individual service, there is  were one of these services to be compromised. It also means that, were your Google/Apple/Microsoft account to be compromised, the hacker would not gain access to any services you sign into using this account.
+Whilst you are entrusting credentials to the service you sign into when using a traditional e-mail/password combination, since both your e-mail address and password are now entirely unique to each individual service, the damage is isolated were one of these services to be compromised. It also means that, were your Google/Apple/Microsoft account to be compromised, the hacker would not gain access to any services you sign into using this account.
 
 Always signing in with a unique e-mail address can help maintain a clear picture of what you have signed up for, as well as a fine-grained control over account access.
 
@@ -246,7 +246,7 @@ Look for settings referring to *Social Connections*/*Social Login*/similar. Here
 
 Saving your credit card information on various sites puts it at risk of being leaked. Wherever possible, use a service such as Apple Pay or Vipps to abstract your payment information away from the site you are buying something from. Virtual credit cards from sites like [privacy.com](https://privacy.com) are currently only available in the US, but Apple Pay/Vipps perform an analagous, if not **more** secure, function - providing one-time use payment details at checkout.
 
-Remove your credit card information from the if possible.
+Remove any saved credit card information from the account if possible.
 
 ### 9. Update address information
 
@@ -274,21 +274,27 @@ Whilst this section references Google, the following really applies to any non-p
 
 I used Gmail, so much of my data consequently ended up with Google. Photos, Drive, Search & Maps were all services I heavily relied on.
 
-### Email
-
-> eg. Gmail, Outlook
-
-See recommendations further up in this guide.
-
 ### TOTP
 
 > eg. Google Authenticator, Microsoft Authenticator
 
 See recommendations further up in this guide.
 
+### Email
+
+> eg. Gmail, Outlook
+
+See recommendations further up in this guide.
+
+### Password Manager
+
+> eg. Google Password Manager/Chrome, Microsoft Edge, Apple iCloud KeyChain etc.
+
+See recommendations further up in this guide.
+
 ### Drive
 
-> eg. Google Drive, Microsoft OneDrive, Apple iCloud, Dropbox
+> eg. Google Drive, Microsoft OneDrive, Apple iCloud Drive, Dropbox
 
 At a minimum, reduce the number of providers that you have entrusted with your data down to one or two. Ideally find a provider that supports end-to-end encryption(E2EE), such as [Proton Drive](https://proton.me/drive).
 
@@ -296,13 +302,13 @@ Alternatively you could export your data to your own offline storage solution.
 
 ### Photos
 
-> eg. Google Photos, Apple iCloud, Facebook
+> eg. Google Photos, Apple iCloud Photos, Facebook
 
 NextCloud
 
 ### Notes
 
-> eg. Google Keep, Microsoft OneNote, Apple Notes, Evernote
+> eg. Google Keep, Microsoft OneNote, Apple iCloud Notes, Evernote
 
 Joplin
 
@@ -314,7 +320,7 @@ RSS feeds
 
 ### Productivity/Office Suite
 
-> eg. Google Docs, Microsoft Office, Apple Pages/Numbers/Keynote
+> eg. Google Docs, Microsoft Office, Apple iWork
 
 NextCloud
 
