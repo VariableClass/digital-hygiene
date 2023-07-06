@@ -2,7 +2,6 @@
 
 ## Overview
 
-- Introduction
 - Getting Started
   - Install a Time-based One Time Password (TOTP) app
   - Register for a brand new end-to-end encrypted (E2EE) e-mail account
@@ -10,6 +9,7 @@
   - Register for a password manager
   - Import all your passwords
 - Sorting through your accounts
+  - In future
   - Merge duplicates
   - Delete the account if you no longer need it
   - Change your password
@@ -21,16 +21,6 @@
   - Update address information
 - Protect your phone number
 - De-Google your life
-
-## Introduction
-
-The following is a guide to help you go from having no idea what personal information you have sat out there waiting to be leaked and/or abused, a messy e-mail inbox and being at risk with regards to both privacy & security to having as much control over your personal information as is possible in 2023, and being in much better standing when it comes to both privacy and security.
-
-1. First and foremost; **avoid creating new accounts** wherever possible. The best measure you can take to keep your personal information from being misused is to never have given it out in the first place.
-
-2. The second best measure you can take is to **delete data** that is already out there. This is a time-consuming and tedious process, but is thankfully more or less a one-time job.
-
-3. Thirdly, you will need to **secure** the accounts you do want to keep. This process consists of changing your password, adding strong multifactor authentication wherever available and ideally changing the e-mail address you use to an e-mail alias. This is also a good opportunity to turn up the privacy dials on these accounts by going through your account page and opting out of any settings that refer to sharing your data. This can be anything from sharing data with third parties to what information is shared publicly/with other registered users.
 
 ## Getting Started
 
@@ -152,6 +142,10 @@ Password import guides for each of the aforementioned providers are listed here:
 Now comes the tedious part. Having laid the foundations for a more secure future, it's time to wade through your existing accounts. For each account in your password manager, follow the steps laid out below. Remember that this is a marathon, not a sprint. It typically takes several weeks to get through all your accounts but this is thankfully a one-time process.
 
 Try to set a goal of doing all of the accounts under a letter of the alphabet each time you sit down to attack it, or getting through 10 accounts a day or whatever you find achievable. The most important thing is to keep going; better that it take 6 months but you get through the list than getting 10% of the way through and giving up.
+
+### 0. In future
+
+First and foremost; the best measure you can take to keep your personal information from being misused is to never have given it out in the first place. This can be good to keep in the back of your mind whenever you go to sign up to new apps or services in future, to save yourself the hassle of having to go through and delete or secure accounts like this again.
 
 ### 1. Merge duplicates
 
