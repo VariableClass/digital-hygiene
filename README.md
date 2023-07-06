@@ -28,7 +28,11 @@ Here follows my best-attempt method for getting started with a more private & se
 
 ### 1. Install a Time-based One Time Password (TOTP) app
 
-Install a TOTP app on your device. This will be a vital tool for securing your accounts later on and is the next best alternative after physical hardware security keys.
+[<img style="float: right;" src="./res/totp.png" height="400" />](#1-install-a-time-based-one-time-password-totp-app)
+
+Install a TOTP app on your device. This will be a vital tool for securing your accounts later on and is the next best alternative after physical hardware security keys like [Yubikey](https://www.yubico.com).
+
+[<img src="./res/yubikey.png" height="200"/>](https://www.yubico.com) 
 
 Many password managers allow for keeping these codes together with your account passwords, though experts disagree on whether it is wise to utilise these features. Personally, I would advise against this as you lose the benefits of using multifactor authentication were your password manager to become compromised.
 
@@ -52,6 +56,8 @@ Many password managers allow for keeping these codes together with your account 
 
 Switching e-mail providers can seem like a daunting prospect but, when combined with a password manager and e-mail aliasing, can be done systematically and is then fairly straightforward to put aside if things get busy and pick up when time frees up again.
 
+[<p align="center"><img src="./res/e2ee-mail.jpg" height="300" /></p>](https://pr.tn/ref/XRYC0YW7X370)
+
 When registering for this new account, pick a brand new username that you have never used anywhere before and preferably one that would be hard to guess/associate with you. Avoid including personal information like your name or birth year.
 
 Use a strong password that you will be able to remember and set up 2FA using your TOTP app or, even better, a hardware security key like [Yubikey](https://www.yubico.com). These are important factors to properly secure your account but, since your data will now be encrypted against these credentials, losing them will mean losing access to your e-mails, even if you were regain access to your account.
@@ -74,6 +80,8 @@ Additionally, you may consider [adding a recovery e-mail address](https://proton
 
 ### 3. Register with an e-mail aliasing service
 
+[<img style="float: right;" src="./res/alias.svg" height="400" />](https://simplelogin.io)
+
 At least with **Proton Mail**, you can create a couple of aliases directly in their e-mail service. I would recommend creating one of these to use when registering with a dedicated alias service, unless going with **Proton**/**SimpleLogin**, as to not expose your actual e-mail address/username to anyone but your e-mail provider.
 
 If you opt for **SimpleLogin** and are already using **Proton Mail** you can simply log in with your **Proton** account. Otherwise, set a strong password & enable 2FA, but make sure the password is different from the one you used with your e-mail provider. You will change this password once you have set up a password manager.
@@ -82,9 +90,9 @@ If you opt for **SimpleLogin** and are already using **Proton Mail** you can sim
 
 ##### Open Source
 
-- [SimpleLogin](https://simplelogin.io/)
-- [AnonAddy](https://anonaddy.com/)
-- [Firefox Relay](https://relay.firefox.com/)
+- [SimpleLogin](https://simplelogin.io)
+- [AnonAddy](https://anonaddy.com)
+- [Firefox Relay](https://relay.firefox.com)
 
 ##### Closed Source
 
@@ -92,21 +100,31 @@ If you opt for **SimpleLogin** and are already using **Proton Mail** you can sim
 
 #### Custom domains
 
-There is a case to be made both for and against using a custom domain with your e-mails. It is certainly somewhat less anonymous, since you are, at some point or another, associated with the domain you register. Many domain registrars do however allow you to anonymise your personal information from showing up in [WHOIS](https://en.wikipedia.org/wiki/WHOIS) lookups. Your domain may also stand out more than one you may otherwise be assigned by your aliasing service.
+There is a case to be made both for and against using a custom domain with your e-mails. If you do opt to go with a custom domain, there are a wide variety of domain registrars to choose from, however my personal favourite is [Gandi](https://gandi.net), since they support Norway's `*.no` [TLD](https://en.wikipedia.org/wiki/Top-level_domain).
 
-A great advantage of using a custom domain is that you are not bound to your e-mail provider nor your e-mail aliasing service. Also, when using a lot of e-mail aliases, you can very simply enable notification if *any* of them are detected in a data breach using the [Domain Search feature from have i been pwned?](https://haveibeenpwned.com/DomainSearch).
+[<img style="float: right;" src="./res/email-domain.svg" height="200" />](#custom-domains)
+
+##### Pros
+
+- One-time setup for data breach alerts from [have i been pwned?](https://haveibeenpwned.com/DomainSearch). Don't have to individually add every alias
+- Can much easier switch e-mail provider/e-mail aliasing service at any time
+
+##### Cons
+
+- Less anonymity since you must associate your personal information with a domain provider *(though many domain registrars allow for anonymising your personal information from showing up in [WHOIS](https://en.wikipedia.org/wiki/WHOIS) lookups)*
+- More likely to stand out from the crowd
 
 #### PGP Encryption
 
-At this point, if your aliasing service allows for it, I would strongly recommend setting up PGP encryption between your e-mail provider and your aliasing service to protect against man-in-the-middle attacks between your aliasing service and your e-mail provider.
+At this point, if your aliasing service allows for it, I would strongly recommend setting up PGP encryption between your e-mail provider and your aliasing service to protect against man-in-the-middle attacks between these two points. You can also add contacts' PGP keys against their aliases in **SimpleLogin** to prevent against such attacks from end-to-end.
+
+[<p align="left"><img src="./res/pgp.png" height="150" /></p>](#pgp-encryption)
 
 ### 4. Register for a password manager
 
-This is the first service you can use your e-mail aliasing service to generate an alias for. (e.g. bitwarden.24kys@mydomain.com), again, unless you remain within the **Proton** ecosystem.
+[<p align="center"><img src="./res/password-manager.png" height="400" /></p>](#4-register-for-a-password-manager)
 
-For all other cases than **Proton**/**Proton Pass**, set a new, strong password that you will be able to remember and enable 2FA. This password and the password to your e-mail provider are the only two passwords you will need to remember in future.
-
-You can try out your new password manager by adding the e-mail/password combination you used when signing up for the e-mail aliasing service. You can then immediately navigate to your e-mail aliasing service and use your password manager to generate a new, much stronger password to use here.
+Using a password manager has several benefits. Firstly, you no longer have to remember all of your login details for every single service you use. E-mail addresses, usernames, passwords & more can be saved and associated with a website in your password manager. This allows you to take advantage of the second benefit - generating unique, complex passwords for each website you use. This greatly reduces the attack surface *when*, not if, one of your passwords is leaked, since the password is now only good for the compromised site, not your Facebook, e-mail or bank accounts too. You can install your password manager's app on your phone, add add their extension to your browser - this will then automatically fill your username & password on any website you use.
 
 Most password managers support autofilling not only username, passwords & TOTPs, but also personal information like name, address, passport and credit card information. You can add all of these into your password manager to save having to fish out your credit card or passport any time you go to purchase something/register for a flight.
 
@@ -125,9 +143,25 @@ Most password managers support autofilling not only username, passwords & TOTPs,
 - [1Password](https://1password.com)
 - [Dashlane](https://www.dashlane.com)
 
+#### Register
+
+For all combinations other than **Proton** + **Proton Pass**, you will need to create a new account. This is the first service you can use your e-mail aliasing service to generate an alias for. (e.g. bitwarden.2k7ys@mydomain.com).
+
+Set a new, strong password that you will be able to remember and enable 2FA. This password and the password to your e-mail provider are the only two passwords you will need to remember in future.
+
+Once you've signed up, you can install the browser extension for your password manager and log in to it. You can also install the desktop & mobile apps at this point.
+
+#### Add the password for your e-mail aliasing service
+
+Once you're set up, you can add your first password - click *Add* or *New* to add a new login, then enter the URL for your e-mail aliasing service, the username/e-mail you registered with there and the password you entered there at sign up.
+
+You can then immediately navigate to your e-mail aliasing service, log in using your password manager's autofill and use your password manager to generate a new, much stronger password to use here. Make sure you are prompted to overwrite the existing password.
+
 ### 5. Import all your passwords
 
-It is really important to make sure you have retrieved as many passwords as it is possible to get out of any and all browsers you use (Chrome, Firefox, Brave, Edge, Opera, ...), across all your devices (desktop PC, laptop, phone, tablet...). Some password managers also have the facility to import accounts from your e-mail.
+[<img style="float: right; padding-left: 20px;" src="./res/password-import.png" height="300" />](#5-import-all-your-passwords)
+
+Now you can import any saved passwords from all of your devices & browsers. It is really important to make sure you have retrieved as many passwords as it is possible to get out of any and all browsers you use (Chrome, Firefox, Brave, Edge, Opera, ...), across all your devices (desktop PC, laptop, phone, tablet...). Some password managers also have the facility to import accounts from your e-mail.
 
 Password import guides for each of the aforementioned providers are listed here:
 
@@ -246,7 +280,15 @@ Remove any saved credit card information from the account if possible.
 
 On sites you regularly use and have secured, it can be a good idea to ensure that your address information is up-to-date, so that things get delivered to your current address.
 
+## Separating work & home
+
+[<img style="float: right; padding-left: 20px;" src="./res/work-life.png" height="150" />](#separating-work--home)
+
+Hopefully your job provides you with a password manager but even if not, it can be a good idea to separate out logins/information associated with work to a completely separate password manager account. You can use your work e-mail address to sign up to this and it is yet another way to minimise your attack surface. It can also help to keep work and home life separate, since you can optionally only log in to your work password manager on your work devices, for example.
+
 ## Protect your phone number
+
+[<img style="float: right; padding-left: 20px;" src="./res/mobile.png" height="300" />](#protect-your-phone-number)
 
 Reserve your phone number from being used by third parties/shown on sites like [1881.no](https://1881.no)
 
@@ -264,6 +306,8 @@ Logg inn [her](https://oppdater.gulesider.no/person) med BankID for å fjerne di
 
 ## De-Google your life
 
+[<p align=center><img src="./res/antitrust.jpg" height="400" /></p>](#de-google-your-life)
+
 Whilst this section references Google, the following really applies to any non-privacy-friendly services you may use, Big Tech or otherwise.
 
 I used Gmail, so much of my data consequently ended up with Google. Photos, Drive, Search & Maps were all services I heavily relied on.
@@ -272,19 +316,25 @@ I used Gmail, so much of my data consequently ended up with Google. Photos, Driv
 
 > eg. Google Authenticator, Microsoft Authenticator
 
-See recommendations further up in this guide.
+[See TOTP recommendations further up in this guide](#1-install-a-time-based-one-time-password-totp-app).
 
-### Email
+### E-mail
 
 > eg. Gmail, Outlook
 
-See recommendations further up in this guide.
+[See e-mail provider recommendations further up in this guide](#2-register-for-a-brand-new-end-to-end-encrypted-e2ee-e-mail-account).
+
+### E-mail Aliasing
+
+> eg. Apple HideMyEmail
+
+[See e-mail aliasing recommendations further up in this guide](#3-register-with-an-e-mail-aliasing-service).
 
 ### Password Manager
 
 > eg. Google Password Manager/Chrome, Microsoft Edge, Apple iCloud KeyChain etc.
 
-See recommendations further up in this guide.
+[See password manager recommendations further up in this guide](#4-register-for-a-password-manager).
 
 ### Drive
 
@@ -298,25 +348,28 @@ Alternatively you could export your data to your own offline storage solution.
 
 > eg. Google Photos, Apple iCloud Photos, Facebook
 
-NextCloud
+- [NextCloud](https://nextcloud.com)
 
 ### Notes
 
 > eg. Google Keep, Microsoft OneNote, Apple iCloud Notes, Evernote
 
-Joplin
+- [Joplin](https://joplinapp.org/)
 
 ### News
 
 > eg. Google News, Apple News, Reddit
 
-RSS feeds
+RSS Readers
 
 ### Productivity/Office Suite
 
 > eg. Google Docs, Microsoft Office, Apple iWork
 
-NextCloud
+- [LibreOffice](https://www.libreoffice.org)
+- [Open Office](https://www.openoffice.org)
+- [Only Office](https://www.onlyoffice.com)
+- [NextCloud](https://nextcloud.com)
 
 ### Search Engine
 
@@ -348,6 +401,7 @@ NextCloud
 > eg.Google Home, Apple HomeKit, Amazon Alexa
 
 - [Home Assistant](https://www.home-assistant.io)
+- [openHAB](https://www.openhab.org)
 - [Homey](https://homey.app)
 
 ### Sign in with
