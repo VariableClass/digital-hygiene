@@ -1,4 +1,4 @@
-# Digital Hygiene for dummies
+# Digital Hygiene
 
 ## Overview
 
