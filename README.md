@@ -145,7 +145,7 @@ Most password managers support autofilling not only username, passwords & TOTPs,
 
 #### Register
 
-For all combinations other than **Proton** + **Proton Pass**, you will need to create a new account. This is the first service you can use your e-mail aliasing service to generate an alias for. (e.g. bitwarden.2k7ys@mydomain.com).
+For all combinations other than **Proton** + **Proton Pass**, you will need to create a new account. This is the first service you can use your e-mail aliasing service to generate an alias for. (e.g. bitwarden.2k7ys@example.com).
 
 Set a new, strong password that you will be able to remember and enable 2FA. This password and the password to your e-mail provider are the only two passwords you will need to remember in future.
 
@@ -256,7 +256,7 @@ Use your e-mail aliasing service to generate a new alias for the current account
 
 Ideally, include a randomly-generated suffix such that your e-mail addresses can't simply be guessed by using the company name and your domain. This also makes your aliases easier to regenerate should the need arise. For example:
 
-`facebook.2j49f@mydomain.com`
+`facebook.2j49f@example.com`
 
 Using an alias like this, especially in combination with something like [have i been pwned?](https://haveibeenpwned.com), means that you will be able to directly pinpoint who is guilty in selling or leaking your information. You may even know about a leak before they do!
 
