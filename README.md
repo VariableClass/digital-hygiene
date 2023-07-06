@@ -199,7 +199,7 @@ If you feel you can get rid of the account, you can try to delete it. You can do
 
   ```markdown
     To: privacy@company.com
-    Subject: Account Deletion
+    Subject: GDPR Deletion Request
 
     Please delete my account and all associated personal information in accordance with GDPR.
   ```
