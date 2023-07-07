@@ -84,6 +84,16 @@ If you opt for **SimpleLogin** and are already using **Proton Mail** you can sim
 
 - [Apple Hide My E-mail](https://support.apple.com/en-us/HT210425)
 
+### have i been pwned?
+
+[<img style="float: right;" src="../../res/pwned.png" height="200" />](https://haveibeenpwned.com)
+
+[have i been pwned?](https://haveibeenpwned.com) is a free service that will alert you if any of your e-mail addresses have been leaked in a data breach.
+
+With a single e-mail address, the process of signing up for alerts is very simple - simply enter your e-mail on their website, click subcribe and verify the link sent to your inbox.
+
+With tens to hundreds of e-mail aliases, however the process is a little different. **SimpleLogin** integrates with [have i been pwned?](https://haveibeenpwned.com)'s APIs to alert you if any of your aliases have been leaked, however other aliasing services may not. If they don't, it can be a good idea to get a custom domain and use the [Domain search feature](https://haveibeenpwned.com/DomainSearch) from [have i been pwned](https://haveibeenpwned.com), as detailed below.
+
 ### Custom domains
 
 There is a case to be made both for and against using a custom domain with your e-mails. If you do opt to go with a custom domain, there are a wide variety of domain registrars to choose from, however my personal favourite is [Gandi](https://gandi.net), since they support Norway's `*.no` [TLD](https://en.wikipedia.org/wiki/Top-level_domain).
@@ -92,7 +102,7 @@ There is a case to be made both for and against using a custom domain with your 
 
 #### Pros
 
-- One-time setup for data breach alerts from [have i been pwned?](https://haveibeenpwned.com/DomainSearch). Don't have to individually add every alias
+- One-time setup for data breach alerts via [have i been pwned?](https://haveibeenpwned.com)'s [Domain search](https://haveibeenpwned.com/DomainSearch). No need to individually register each alias
 - Can much easier switch e-mail provider/e-mail aliasing service at any time
 
 #### Cons
