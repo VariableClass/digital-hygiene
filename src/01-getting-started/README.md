@@ -147,6 +147,12 @@ Set a new, strong password that you will be able to remember and enable 2FA. Thi
 
 Once you've signed up, you can install the browser extension for your password manager and log in to it. You can also install the desktop & mobile apps at this point.
 
+### Connect to e-mail aliasing service
+
+If not using **Proton Pass**, where e-mail aliases can be generated directly via **SimpleLogin**, you may still be able to connect your password manager to your e-mail aliasing service.
+
+**Bitwarden** has functionality to [connect to your e-mail aliasing service](https://bitwarden.com/help/generator) so that you can generate a new alias directly in Bitwarden.
+
 ### Add the password for your e-mail aliasing service
 
 Once you're set up, you can add your first password - click *Add* or *New* to add a new login, then enter the URL for your e-mail aliasing service, the username/e-mail you registered with there and the password you entered there at sign up.

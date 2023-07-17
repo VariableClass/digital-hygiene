@@ -1,6 +1,6 @@
 # Digital Hygiene
 
-The following guide aims to be a one-stop resource for getting started with secure e-mail, hardened personal security & better privacy practices. First and foremost; the best measure you can take to keep your personal information from being misused is to never give it out in the first place. This can be good to keep in the back of your mind whenever you go to sign up to new apps or services in future, to save yourself the hassle of having to go through and delete or secure accounts.
+The following guide aims to be a one-stop resource for getting started with **secure e-mail**, hardened personal **security** & better **privacy** practices. First and foremost; the best measure you can take to keep your personal information from being misused is to never give it out in the first place. This can be good to keep in the back of your mind whenever you go to sign up to new apps or services in future, to save yourself the hassle of having to go through and delete or secure accounts.
 
 This guide is divided into 3 sections;
 
