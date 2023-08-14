@@ -72,11 +72,15 @@ Multifactor Authentication (MFA) is one of the best measures you can take to sec
 
 Enable the highest option on this list available to you. This will often mean scanning a QR-code with your TOTP app and entering the code it generates.
 
-Often, you will subsequently be presented with a list of backup codes. These can be saved to your password manager as a custom field on the account or as a separate note called something like `SomeOnlineShop | 2FA Backup Codes`. If you are not presented with these codes, they are typically available as an individual security option you can set up in your account's security settings.
+### Backup Codes
+
+Often, you will subsequently be presented with a list of backup codes. It's very important to hold on to these codes/an alternative backup MFA since, if you lose your phone or Yubikey then you'll need an alternative way to get in to your account.
+
+These codes can be saved to your password manager as a custom field on the account or as a separate note called something like `SomeOnlineShop | 2FA Backup Codes`. If you are not presented with these codes, they are typically available as an individual security option you can set up in your account's security settings.
 
 ## 4. Improve your privacy settings
 
-Since you are now anyway logged in to the account, this is an ideal time to go through the various security & privacy settings and make sure everything looks good. I found myself typically turning off/opting out of multiple privacy settings. Often these settings were not limited to the **Privacy** section of the menu, either, but tucked away in some other menu. For example, what elements of your profile are visible to the public on LinkedIn.
+Since you are now anyway logged in to the account, this is an ideal time to go through the various security & privacy settings and make sure everything looks good. I found myself typically turning off/opting out of multiple privacy settings. Often these settings were not limited to the **Privacy** section of the menu, either, but tucked away in some other menu. For example, what elements of your profile are visible to the public on LinkedIn. This is also an ideal opportunity to unsubscribe from unwanted e-mail/SMS newsletters.
 
 Facebook was by far and away the worst offender here. Multiple UIs, disjointed menus and sneaky hidden settings mean that you should be prepared for a fight, but the best thing is to just delete your Facebook account if you can.
 
@@ -84,9 +88,13 @@ Facebook was by far and away the worst offender here. Multiple UIs, disjointed m
 
 Use your e-mail aliasing service to generate a new alias for the current account.
 
-Ideally, include a randomly-generated suffix such that your e-mail addresses can't simply be guessed by using the company name and your domain. This also makes your aliases easier to regenerate should the need arise. For example: facebook.2j49f@example.com
+Ideally, include a randomly-generated suffix such that your e-mail addresses can't simply be guessed by using the company name and your domain. This also makes your aliases easier to regenerate should the need arise. For example: **facebook.2j49f@example.com**.
 
 Using an alias like this, especially in combination with a service like [have i been pwned?](https://haveibeenpwned.com), means that you will be able to directly pinpoint who is guilty in selling or leaking your information. You may even know about a leak before they do!
+
+### Randomly generated username
+
+It's a good idea to use a unique, randomly generated username for each account, this will make it more difficult to associate your information across the web. Bitwarden includes a username generator, but you can just as easily pick a random dictionary word and append a random number. Make sure you save this in your password manager, along with the e-mail and password you use to sign in to the account.
 
 ## 6. Migrate away from "Sign in with..."
 
