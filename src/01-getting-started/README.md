@@ -46,7 +46,7 @@ Switching e-mail providers can seem like a daunting prospect but, when combined 
 
 When registering for this new account, pick a brand new username that you have never used anywhere before and preferably one that would be hard to guess/associate with you. Avoid including personal information like your name or birth year.
 
-Use a strong password that you will be able to remember and set up 2FA using your TOTP app or, even better, a hardware security key like [Yubikey](https://www.yubico.com). These are important factors to properly secure your account but, since your data will now be encrypted against these credentials, losing them will mean losing access to your e-mails, even if you were regain access to your account.
+Use a strong password - a sentence or phrase more than 20 characters, preferably with slang/dialect - that you will be able to remember and set up 2FA using your TOTP app or, even better, a hardware security key like [Yubikey](https://www.yubico.com). These are important factors to properly secure your account but, since your data will now be encrypted against these credentials, losing them will mean losing access to your e-mails, even if you were regain access to your account.
 
 Avoid using any quick import features/auto-forwarding as not to associate your new e-mail with your old e-mail.
 
