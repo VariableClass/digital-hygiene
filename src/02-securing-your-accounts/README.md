@@ -82,7 +82,7 @@ These codes can be saved to your password manager as a custom field on the accou
 
 Since you are now anyway logged in to the account, this is an ideal time to go through the various security & privacy settings and make sure everything looks good. I found myself typically turning off/opting out of multiple privacy settings. Often these settings were not limited to the **Privacy** section of the menu, either, but tucked away in some other menu. For example, what elements of your profile are visible to the public on LinkedIn. This is also an ideal opportunity to unsubscribe from unwanted e-mail/SMS newsletters.
 
-Facebook was by far and away the worst offender here. Multiple UIs, disjointed menus and sneaky hidden settings mean that you should be prepared for a fight, but the best thing is to just delete your Facebook account if you can.
+Facebook is one of the worst offenders here. Multiple UIs, disjointed menus and sneaky hidden settings mean that you should be prepared for a fight, but the best thing is to just delete your Facebook account if you can.
 
 ## 5. Use an e-mail alias
 
